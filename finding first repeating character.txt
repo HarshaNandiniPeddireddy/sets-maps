@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int len,i;
+    cin>>len;
+    string str;
+    cin>>str;
+    unordered_set<char>s;
+    for(i=0;i<len;i++)
+    {
+        str[i]=toupper(str[i]);
+        s.insert(str[i]);
+    }
+    if(s.size()==26)
+    cout<<"YES";
+    else
+    cout<<"NO";
+}
